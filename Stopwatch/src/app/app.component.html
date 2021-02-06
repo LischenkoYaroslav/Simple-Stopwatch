@@ -1,0 +1,9 @@
+<div class="stopwatch-container">
+  <h1>Секундомір</h1>
+  
+  <div class="stopwatch-values">{{stopwatchValues.hours}}:{{stopwatchValues.minutes}}:{{stopwatchValues.seconds}}</div>
+  <button class="main-button" *ngIf="!stopWatchIsStarted" (click)="start()">Start</button>
+  <button class="main-button" *ngIf="stopWatchIsStarted" (click)="stop()">Stop</button>
+  <button (click)="wait()">Wait</button>
+  <button (click)="reset()">Reset</button>
+</div>
